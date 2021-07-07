@@ -1,0 +1,11 @@
+[alias]
+  s = status -sb
+  c = commit
+  a = add
+  aa = add -A
+  d = diff
+  lo = log --oneline --decorate
+  loa = log --oneline --decorate --graph --all
+  pullom = pull origin master
+  ch = checkout
+  restoremaster = reset --hard origin/master
