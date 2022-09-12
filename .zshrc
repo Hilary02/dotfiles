@@ -17,6 +17,9 @@ zstyle ':completion:*:sudo:*' command-path /usr/local/sbin /usr/local/bin \
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# 履歴上限(行)
+SAVEHIST=1000000
+HISTSIZE=1000000
 # ブロンプト複数起動時のhistory共有
 setopt share_history
 # コピペしやすいようにコマンド実行後は右プロンプトを消す
@@ -85,4 +88,4 @@ function vizshrc { vim ~/.zshrc }
 alias -g gr='| grep --color=auto'
 alias -g L='| less'
 alias -g C='| pbcopy'
-
+alias -g git_branch_fresh = 'git fetch -p | git branch --merged | grep -v "\*|develop|master" | xargs -n 1 git branch -d'
