@@ -19,3 +19,6 @@ echo "ok. run brew upgrade ..."
 brew upgrade
 brew bundle
 brew cleanup
+
+# vscodeがインストールされた後にvscodeの設定コピーを実行
+./vscode/vscode_mac.sh

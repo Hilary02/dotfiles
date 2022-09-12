@@ -1,0 +1,66 @@
+// 既定値を上書きするには、このファイル内にキー バインドを挿入しますauto[]
+[
+  {
+    "key": "shift+space",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInput Focus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+space",
+    "command": "-editor.action.triggerSuggest",
+    "when": "editorHasCompletionItemProvider && textInputFocus && !editorReadonly"
+  },
+  {
+    "key": "ctrl+cmd+g",
+    "command": "git-graph.view"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "git.stageSelectedRanges",
+    "Whent": "isInDiffEditor"
+  },
+  {
+    "key": "cmd+k alt+cmd+s",
+    "command": "-git.stageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "--markdown-preview-enhanced. syncPreview",
+    "when": "editorLangId == markdown"
+  },
+  {
+    "key": "ctrl+shift+s",
+    "command": "git.unstageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+cmd+g",
+    "command": "git-graph.view"
+  },
+  {
+    "key": "ctrl+s",
+    "command": "git.stageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "cmd+k alt+cmd+s",
+    "command": "-git. stageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "ctrl+Shift+s",
+    "command": "-markdown-preview-enhanced. syncPreview",
+    "when": "editorLangId == markdown."
+  },
+  {
+    "key": "ctrl+Shift+s",
+    "command": "git.unstageSelectedRanges",
+    "when": "isInDiffEditor"
+  },
+  {
+    "key": "cmd+k cmd+n",
+    "command": "-git.unstageSelectedRanges",
+    "When": "isInDiffEditor"
+  }
+]

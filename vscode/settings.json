@@ -1,0 +1,43 @@
+{
+  "editor.bracketPairColorization.enabled": true,
+  "editor.guides.bracketPairs": "active",
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "editor.fontSize": 14,
+  "editor.defaultFormatter": "esbenp.prettier-vscode", //一時的にオフ
+  "editor.codeActionsOnSave": {
+    "source.fixall.eslint": true,
+    "source.fixall.stylelint": true,
+    "stylelint.autoFixOnSave": true
+  },
+  "editor.tabSize": 2,
+  "editor.minimap.enabled": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false, // Markdownのファイルの末尾の空白を削除しない
+    "editor.formatOnPaste": false,
+    "editor.formatOnSave": false,
+    "editor.formatOnType": false
+  },
+  "files.exclude": {
+    "**/node_modules": true
+  },
+  "search.exclude": {
+    "**/*.mht": true
+  },
+  "cSpell.userWords": ["stylelint"],
+  "workbench.editor.untitled.hint": "hidden",
+  "git.suggestSmartCommit": false,
+  "terminal.integrated.tabs.location": "left",
+  "[jsonc]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "terminal.integrated.env.osx": {
+    "FIG_NEW_SESSION": "1"
+  },
+  "editor.accessibilitySupport": "off",
+  "editor.formatOnSave": true,
+  "diffEditor.ignoreTrimWhitespace": false
+}
