@@ -15,11 +15,6 @@
     "command": "git-graph.view"
   },
   {
-    "key": "ctrl+s",
-    "command": "git.stageSelectedRanges",
-    "Whent": "isInDiffEditor"
-  },
-  {
     "key": "cmd+k alt+cmd+s",
     "command": "-git.stageSelectedRanges",
     "when": "isInDiffEditor"
@@ -45,7 +40,7 @@
   },
   {
     "key": "cmd+k alt+cmd+s",
-    "command": "-git. stageSelectedRanges",
+    "command": "-git.stageSelectedRanges",
     "when": "isInDiffEditor"
   },
   {
