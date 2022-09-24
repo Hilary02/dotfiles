@@ -77,6 +77,12 @@ RPROMPT=$RPROMPT'${vcs_info_msg_0_}'
 export FZF_DEFAULT_COMMAND='rg --files --hidden --glob "!.git"'
 export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
 
+# volta
+export VOLTA_HOME="$HOME/.volta"
+export PATH="$VOLTA_HOME/bin:$PATH"
+VOLTA_HOME=$HOME/.volta
+export PATH=$VOLTA_HOME/bin:$PATH
+
 # Shift矢印で単語移動
 bindkey ";2C" forward-word
 bindkey ";2D" backward-word
@@ -88,4 +94,4 @@ function vizshrc { vim ~/.zshrc }
 alias -g gr='| grep --color=auto'
 alias -g L='| less'
 alias -g C='| pbcopy'
-alias -g git_branch_fresh = 'git fetch -p | git branch --merged | grep -v "\*|develop|master" | xargs -n 1 git branch -d'
+alias -g git_branch_fresh='git fetch -p | git branch --merged | grep -v "\*|develop|master" | xargs -n 1 git branch -d'
