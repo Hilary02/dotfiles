@@ -12,3 +12,6 @@
   pullom = pull origin master
   ch = checkout
   restoremaster = reset --hard origin/master
+[user]
+	name = Hilary02
+	email = hilary02e@gmail.com
