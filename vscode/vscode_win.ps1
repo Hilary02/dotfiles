@@ -13,8 +13,6 @@ code --list-extensions > "$PSScriptRoot/backup/extensions"
 # make symbolic links for vscode settings
 rm "$VSCODE_SETTING_DIR/settings.json"
 New-Item -ItemType SymbolicLink -Path "$VSCODE_SETTING_DIR/settings.json" -Value "$PSScriptRoot/settings.json"
-# mklink /H "$VSCODE_SETTING_DIR/settings.json" "$PSScriptRoot/settings.json"
 
 rm "$VSCODE_SETTING_DIR/keybindings.json"
 New-Item -ItemType SymbolicLink -Path "$VSCODE_SETTING_DIR/keybindings.json" -Value "$PSScriptRoot/keybindings.json"
-# mklink /H "$VSCODE_SETTING_DIR/keybindings.json" "$PSScriptRoot/keybindings.json"

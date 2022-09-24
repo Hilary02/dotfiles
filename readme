@@ -1,0 +1,18 @@
+# How to run
+## Mac
+1. Install Rosetta
+1. change permission
+1. run init_mac.sh
+```
+sudo softwareupdate --install-rosetta
+git clone 
+find . -type f -name '*.sh' -print | xargs chmod 744
+./init_mac.sh
+```
+
+## Windows
+まだ全体の設定はなし
+1.管理者モードでPowerShellを起動
+```
+./vscode/vscode_win.ps1
+```
