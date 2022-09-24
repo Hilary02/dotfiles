@@ -57,5 +57,10 @@
     "key": "cmd+k cmd+n",
     "command": "-git.unstageSelectedRanges",
     "When": "isInDiffEditor"
+  },
+  {
+    "key": "[Escape]",
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "terminalFocus"
   }
 ]
