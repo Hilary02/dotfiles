@@ -33,7 +33,7 @@ defaults write com.apple.dock minimize-to-application -bool true
 defaults write com.apple.dock launchanim -bool false
 defaults write com.apple.dock tilesize -int 48
 defaults write com.apple.dock autohide -bool true
-defaults write com.apple.dock autohide-delay -float 0.3
-defaults write com.apple.dock autohide-time-modifier -float 0.3
+defaults write com.apple.dock autohide-delay -float 0.02
+defaults write com.apple.dock autohide-time-modifier -float 0.1
 # reboot Dock
 killall Dock
