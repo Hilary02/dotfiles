@@ -28,6 +28,7 @@
     "**/*.mht": true
   },
   "cSpell.userWords": [
+    "Mathf",
     "stylelint"
   ],
   "workbench.editor.untitled.hint": "hidden",
@@ -48,9 +49,10 @@
     "*": true,
     "yaml": false,
     "plaintext": false,
-    "markdown": true
+    "markdown": true,
+    "csharp": true
   },
-  "omnisharp.dotnetPath": "/usr/local/share/dotnet/dotnet",
+  "omnisharp.dotnetPath": "/usr/local/bin/dotnet",
   "[csharp]": {
     "editor.defaultFormatter": "ms-dotnettools.csharp"
   }

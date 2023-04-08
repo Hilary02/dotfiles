@@ -83,6 +83,11 @@ export PATH="$VOLTA_HOME/bin:$PATH"
 VOLTA_HOME=$HOME/.volta
 export PATH=$VOLTA_HOME/bin:$PATH
 
+# Python
+export PYENV_ROOT="$HOME/.pyenv"
+command -v pyenv >/dev/null || export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init -)"
+
 # Shift矢印で単語移動
 bindkey ";2C" forward-word
 bindkey ";2D" backward-word
