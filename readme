@@ -1,4 +1,4 @@
-# How to run
+# How to restore
 ## Mac
 1. Install Rosetta
 1. Change permission
@@ -21,3 +21,9 @@ find . -type f -name '*.sh' -print | xargs chmod 744
 
 ### その他
 - 7-zipを管理者モードで実行してコンテキストメニューに追加する
+
+# How to backup
+## mac
+```
+brew bundle dump
+```
