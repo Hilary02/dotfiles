@@ -1,5 +1,6 @@
 # How to restore
 ## Mac
+
 1. Install Rosetta
 1. Change permission
 1. Run init_mac.sh
@@ -10,7 +11,12 @@ find . -type f -name '*.sh' -print | xargs chmod 744
 ./init_mac.sh
 ```
 
+### その他
+
+[【決定版】MacOS X 高速化テクニック - Qiita](https://qiita.com/soushiy/items/b56d4961d54972bc4b9e)
+
 ## Windows
+
 まだ全体の設定はなし
 1. 管理者モードでPowerShellを起動
 
@@ -18,6 +24,10 @@ find . -type f -name '*.sh' -print | xargs chmod 744
 ./init_win.ps1
 ./vscode/vscode_win.ps1
 ```
+
+### 手動でやること
+
+EpsonDriverのインストール
 
 ### その他
 - 7-zipを管理者モードで実行してコンテキストメニューに追加する
@@ -27,3 +37,5 @@ find . -type f -name '*.sh' -print | xargs chmod 744
 ```
 brew bundle dump
 ```
+
+
