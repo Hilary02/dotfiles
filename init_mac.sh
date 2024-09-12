@@ -44,8 +44,30 @@ defaults write com.apple.dock autohide -bool true
 defaults write com.apple.dock autohide-delay -float 0.02
 defaults write com.apple.dock autohide-time-modifier -float 0.1
 defaults write com.apple.desktopservices DSDontWriteNetworkStores true
+
+# 動きを高速化
+defaults write -g com.apple.trackpad.scaling 3 && \
+defaults write -g com.apple.mouse.scaling 2 && \
+defaults write -g KeyRepeat -int 1 && \
+defaults write -g InitialKeyRepeat -int 15
+
+# クラッシュレポートを無効化する
+defaults write com.apple.CrashReporter DialogType -string "none"
+
+# Finderで情報ウィンドウを開くときのアニメーションを無効
+defaults write com.apple.finder DisableAllAnimations -bool true
+# 全ての拡張子のファイルを表示する
+defaults write -g AppleShowAllExtensions -bool true
+# .DS_Storeファイルを作らせない
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+
+
 # スクショの影を消す
 defaults write com.apple.screencapture disable-shadow -boolean true
+# スクリーンショットをjpgで保存
+defaults write com.apple.screencapture type jpg
+
+# ウィンドウサイズを調整する際の加速再生
 defaults write -g NSWindowResizeTime 0.001
 defaults write com.apple.finder QLEnableTextSelection -bool true
 defaults write -g NSNavPanelExpandedStateForSaveMode -bool true

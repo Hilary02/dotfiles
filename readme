@@ -15,6 +15,8 @@ find . -type f -name '*.sh' -print | xargs chmod 744
 
 [【決定版】MacOS X 高速化テクニック - Qiita](https://qiita.com/soushiy/items/b56d4961d54972bc4b9e)
 
+[Macの初期設定 defaults write comandなど #メモ - Qiita](https://qiita.com/keitean/items/bf82da152fd587fa29ef?utm_source=dlvr.it&utm_medium=twitter)
+
 ## Windows
 
 まだ全体の設定はなし
